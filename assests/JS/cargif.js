@@ -17,14 +17,19 @@ function displayGif(){
 		url:queryURL,
 		method: "GET"
 	}).done(function(response){
-	//geting responce form api
-	console.log(response);	
+		//geting responce form api
+		console.log(response);	
+		//for loop to go thur topics to show all gifs 
+		for (var i = 0; i <response.data.length; i++){
+		//showing gifs in div  (AstonMartin only has one gif dont forget!)
+		var gifurl = response.data[i].images.fixed_height.url
+		var gif = $("<img>").attr("src", gifurl);
+		$("#gifs").append(gif); 	
 		//put response rating in div
-	$("#Rdiv").html('Rating: '+response.data[0].rating);
-	//showing gifs in div  
-	var gifs
-	$("#gifs").html(gifs);	
-	
+		var thediv = $("#gifs")
+		var rate = $("<p>").text('Rating: '+response.data[i].rating);
+		thediv.append(rate);
+		}
 	});
 }
 function makebutton(){
