@@ -2,9 +2,12 @@
 	background-color: ;
 
 }
-.header{
-
-}
 .topic{
 	margin: 10px;
+}
+form{
+	margin: 20px;
+}
+.gifs{
+	display: inline-block;
 }
