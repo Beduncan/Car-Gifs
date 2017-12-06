@@ -1,18 +1,20 @@
 $(document).ready(function(){
 
 var topics =[
-	'Audi R8', 
-	'Porsche 911',
-	'Nissan GTR',
-	'Mazda Miata',
-	'Toyota Supra',
-	'Lexus',
-	'Tesla'
+	'Audi', 
+	'Dodge',
+	'Ferrari',
+	'Mazda',
+	'Nissan',
+	'Porsche',
+	'Tesla',
+	'Toyota',
+	'Volkswagen'
 ];
 //geting gifs from ajax 
 function displayGif(){
 	var car = $(this).attr("data-name");
-	var queryURL ="https://api.giphy.com/v1/gifs/search?q=&api_key=uZGm777wAQsj1NHha0667cF4gwkvc9NO&q=" + car + "&limit=10&offset=0&rating=pg&lang=en"	
+	var queryURL ="https://api.giphy.com/v1/gifs/search?q=&api_key=uZGm777wAQsj1NHha0667cF4gwkvc9NO&q=" + car + "&limit=10&offset=0&rating=G&lang=en"	
 
 	$.ajax({
 		url:queryURL,
