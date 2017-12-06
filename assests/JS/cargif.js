@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 var topics =[
 	'Audi', 
-	'Dodge',
+	'Chevy',
 	'Ferrari',
 	'Mazda',
 	'Nissan',
