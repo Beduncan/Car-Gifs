@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+//array of cars 
 var topics =[
 	'Audi', 
 	'Chevy',
